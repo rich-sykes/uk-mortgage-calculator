@@ -61,10 +61,10 @@ export function MortgageCalculator() {
     return (
         <div className="max-w-6xl mx-auto space-y-8">
             <div className="text-center">
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                     UK Mortgage Calculator
                 </h1>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                     Calculate your mortgage payments with intelligent interest rate forecasting
                     powered by Bank of England data and machine learning.
                 </p>
@@ -73,14 +73,14 @@ export function MortgageCalculator() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Input Form */}
                 <div className="card">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center">
-                        <Calculator className="h-6 w-6 mr-2 text-blue-600" />
+                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <Calculator className="h-6 w-6 mr-2 text-blue-600 dark:text-blue-400" />
                         Mortgage Details
                     </h2>
 
                     <div className="space-y-4">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="label mb-1">
                                 Loan Amount
                             </label>
                             <input
@@ -92,7 +92,7 @@ export function MortgageCalculator() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="label mb-1">
                                 Property Value
                             </label>
                             <input
@@ -104,7 +104,7 @@ export function MortgageCalculator() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="label mb-1">
                                 Annual Interest Rate (%)
                             </label>
                             <input
@@ -117,7 +117,7 @@ export function MortgageCalculator() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="label mb-1">
                                 Term (Years)
                             </label>
                             <input
@@ -129,7 +129,7 @@ export function MortgageCalculator() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label className="label mb-1">
                                 Monthly Outgoings
                             </label>
                             <input
@@ -142,13 +142,13 @@ export function MortgageCalculator() {
                     </div>
 
                     <div className="mt-8">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                             Overpayments (Optional)
                         </h3>
 
                         <div className="space-y-4">
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                <label className="label mb-1">
                                     Overpayment Amount
                                 </label>
                                 <input
@@ -160,7 +160,7 @@ export function MortgageCalculator() {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                <label className="label mb-1">
                                     Frequency
                                 </label>
                                 <select
@@ -185,7 +185,7 @@ export function MortgageCalculator() {
                     </button>
 
                     {error && (
-                        <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700">
+                        <div className="mt-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-300">
                             {error}
                         </div>
                     )}
@@ -197,27 +197,27 @@ export function MortgageCalculator() {
                         <>
                             {/* Payment Summary */}
                             <div className="card">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                                    <PoundSterling className="h-5 w-5 mr-2 text-green-600" />
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                                    <PoundSterling className="h-5 w-5 mr-2 text-green-600 dark:text-green-400" />
                                     Payment Summary
                                 </h3>
 
                                 <div className="space-y-3">
                                     <div className="flex justify-between">
-                                        <span className="text-gray-600">Monthly Payment:</span>
-                                        <span className="font-semibold text-lg">
+                                        <span className="text-gray-600 dark:text-gray-300">Monthly Payment:</span>
+                                        <span className="font-semibold text-lg text-gray-900 dark:text-white">
                                             {formatCurrency(result.paymentDetails.monthlyPayment)}
                                         </span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-gray-600">Total Interest:</span>
-                                        <span className="font-medium">
+                                        <span className="text-gray-600 dark:text-gray-300">Total Interest:</span>
+                                        <span className="font-medium text-gray-900 dark:text-white">
                                             {formatCurrency(result.paymentDetails.totalInterest)}
                                         </span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-gray-600">Total Amount Payable:</span>
-                                        <span className="font-medium">
+                                        <span className="text-gray-600 dark:text-gray-300">Total Amount Payable:</span>
+                                        <span className="font-medium text-gray-900 dark:text-white">
                                             {formatCurrency(result.paymentDetails.totalAmountPayable)}
                                         </span>
                                     </div>

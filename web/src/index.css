@@ -35,19 +35,19 @@
     }
 
     .btn-primary {
-        @apply btn bg-blue-600 text-white hover:bg-blue-700 h-10 py-2 px-4;
+        @apply btn bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 h-10 py-2 px-4;
     }
 
     .btn-secondary {
-        @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300 h-10 py-2 px-4;
+        @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600 h-10 py-2 px-4;
     }
 
     .btn-outline {
-        @apply btn border border-gray-300 hover:bg-gray-50 h-10 py-2 px-4;
+        @apply btn border border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 dark:text-gray-100 h-10 py-2 px-4;
     }
 
     .card {
-        @apply rounded-lg border border-gray-200 bg-white shadow-sm;
+        @apply rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800;
     }
 
     .card-header {
@@ -55,11 +55,11 @@
     }
 
     .card-title {
-        @apply text-2xl font-semibold leading-none tracking-tight;
+        @apply text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100;
     }
 
     .card-description {
-        @apply text-sm text-gray-600;
+        @apply text-sm text-gray-600 dark:text-gray-400;
     }
 
     .card-content {
@@ -71,11 +71,11 @@
     }
 
     .input {
-        @apply flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+        @apply flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder:text-gray-500;
     }
 
     .label {
-        @apply text-sm font-medium leading-none;
+        @apply text-sm font-medium leading-none text-gray-900 dark:text-gray-100;
     }
 }
 

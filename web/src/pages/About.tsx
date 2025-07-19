@@ -2,18 +2,18 @@ export function About() {
     return (
         <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                     About UK Mortgage Calculator
                 </h1>
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-gray-600 dark:text-gray-300">
                     The most advanced mortgage calculator with AI-powered interest rate forecasting
                 </p>
             </div>
 
             <div className="space-y-8">
                 <div className="card">
-                    <h2 className="text-2xl font-semibold mb-4">What Makes Us Different</h2>
-                    <div className="space-y-4 text-gray-700">
+                    <h2 className="card-title">What Makes Us Different</h2>
+                    <div className="space-y-4 text-gray-700 dark:text-gray-300">
                         <p>
                             Unlike traditional mortgage calculators, we leverage real Bank of England
                             interest rate data combined with machine learning algorithms to provide
@@ -30,11 +30,11 @@ export function About() {
                 </div>
 
                 <div className="card">
-                    <h2 className="text-2xl font-semibold mb-4">Technology Stack</h2>
+                    <h2 className="card-title">Technology Stack</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <h3 className="font-semibold mb-2">Backend (Azure Functions)</h3>
-                            <ul className="text-gray-700 space-y-1">
+                            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">Backend (Azure Functions)</h3>
+                            <ul className="text-gray-700 dark:text-gray-300 space-y-1">
                                 <li>• Python with pandas and scikit-learn</li>
                                 <li>• Bank of England API integration</li>
                                 <li>• Random Forest regression models</li>
@@ -42,8 +42,8 @@ export function About() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="font-semibold mb-2">Frontend (React)</h3>
-                            <ul className="text-gray-700 space-y-1">
+                            <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">Frontend (React)</h3>
+                            <ul className="text-gray-700 dark:text-gray-300 space-y-1">
                                 <li>• Modern React with TypeScript</li>
                                 <li>• Responsive Tailwind CSS design</li>
                                 <li>• Interactive data visualizations</li>
@@ -54,8 +54,8 @@ export function About() {
                 </div>
 
                 <div className="card">
-                    <h2 className="text-2xl font-semibold mb-4">Data Sources & Models</h2>
-                    <div className="text-gray-700 space-y-4">
+                    <h2 className="card-title">Data Sources & Models</h2>
+                    <div className="text-gray-700 dark:text-gray-300 space-y-4">
                         <p>
                             Our forecasting models are trained on historical Bank of England base rate
                             data, incorporating various statistical features including:
@@ -66,7 +66,7 @@ export function About() {
                             <li>Economic indicator correlations</li>
                             <li>Rate change momentum analysis</li>
                         </ul>
-                        <p className="text-sm text-gray-500 mt-4">
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
                             Disclaimer: Predictions are for informational purposes only and should not
                             be considered financial advice. Please consult with a qualified mortgage
                             advisor for professional guidance.
