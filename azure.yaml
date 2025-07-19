@@ -1,0 +1,14 @@
+# azure.yaml file for UK Mortgage Calculator
+name: uk-mortgage-calculator
+metadata:
+  template: uk-mortgage-calculator@0.0.1-beta
+services:
+  api:
+    project: ./api
+    language: python
+    host: function
+  web:
+    project: ./web
+    language: js
+    host: staticwebapp
+    dist: dist
