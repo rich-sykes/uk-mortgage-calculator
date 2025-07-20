@@ -10,9 +10,9 @@ export function InterestRateForecasts() {
                 </p>
             </div>
 
-            <div className="card">
+            <div className="card ">
                 <h2 className="card-title">Coming Soon</h2>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600 dark:text-gray-400 mx-4">
                     Interactive charts and forecasting visualizations will be available here.
                 </p>
             </div>
